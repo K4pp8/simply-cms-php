@@ -8,3 +8,5 @@ $pages = $db->query("
 	")->fetchAll(PDO::FETCH_ASSOC);
 
 var_dump($pages);
+
+require_once VIEW_ROOT . 'home.php';
