@@ -1,4 +1,4 @@
-AuthType Basic
-AuthName "Restricted Area"
+AuthName “Area utenti registrati”
 AuthUserFile /Applications/MAMP/htdocs/simply-cms-php/.htpasswd
-requred valid-user
+AuthType Basic
+require valid-user
