@@ -8,15 +8,12 @@ if( !empty($_POST) ){
 	$slug 	= $_POST['slug'];
 	$body 	= $_POST['body'];
 
-	$insertQuery = "INSERT INTO page ( label, title , slug, body, created )
-	VALUES ( ".$label.",". $title.",".$slug . "," . $body . ", NOW())";
+	$insertQuery = "INSERT INTO pages ( label, title , slug, body, created )
+	VALUES ( '".$label."','". $title."','".$slug . "','" . $body . "',NOW())";
 
-	echo $insertQuery;
+	$resultINSert = Database::doQuery( $insertQuery );
 
-	//header('Location: ' . BASE_URL . '/admin/list.php');
-}else{
-
-	echo 'mazza';
+	header('Location: ' . BASE_URL . '/admin/list.php');
 }
 
 require VIEW_ROOT . '/admin/add.php';

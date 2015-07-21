@@ -38,6 +38,16 @@ class Database {
 		return $resultArr;
 	}
 
+	public static function doQuery( $querySql ) {
+		if ($result_obj = self::getConnection()->query( $querySql )) { 
+
+		}else{
+			$resultArr = false;
+			echo "<br /> Errore:" . self::getConnection()->error . "<br />";
+		}
+	}
+
+
 }
 
 ?>
