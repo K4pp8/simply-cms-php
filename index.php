@@ -2,11 +2,22 @@
 
 require_once 'app/start.php';
 
-$pages = $db->query(" 
-		SELECT id, labe, slug
-		FROM pages
-	")->fetchAll(PDO::FETCH_ASSOC);
+$pages = [];
+$querySql = "	SELECT *
+				FROM pages";
+
+
+if ($result_obj = $connection->query( $querySql )) { 
+
+	while($result = $result_obj->fetch_array(MYSQLI_ASSOC)) {
+		array_push($pages, $result  );
+	}
+
+}else{
+	echo "<br /> Errore:" . $connection->error . "<br />";
+}
+
 
 var_dump($pages);
 
-require_once VIEW_ROOT . 'home.php';
+require_once VIEW_ROOT . '/home.php';
