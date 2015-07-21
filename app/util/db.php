@@ -18,7 +18,26 @@ class Database {
 			}
 		}
 	return self::$_connection; 
-	}	
+	}
+
+	public static function getResult( $querySql ) {
+
+		$resultArr = [];
+
+		if ($result_obj = self::getConnection()->query( $querySql )) { 
+
+			while($result = $result_obj->fetch_array(MYSQLI_ASSOC)) {
+				array_push($resultArr, $result  );
+			}
+
+		}else{
+			$resultArr = false;
+			echo "<br /> Errore:" . self::getConnection()->error . "<br />";
+		}
+
+		return $resultArr;
+	}
+
 }
 
 ?>
