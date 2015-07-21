@@ -25,7 +25,7 @@
 						<td> <?php echo escap( $page['title'] ); ?> </td>
 						<td> <a href="<?php echo BASE_URL;?>/page.php?page=<?php echo escap( $page['slug'] ); ?>"> <?php echo escap( $page['slug'] ); ?> </a></td>
 						<td> <a href=""> modifica </a> </td>
-						<td> <a href=""> cancella </a> </td>
+						<td> <a href="<?php echo BASE_URL; ?>admin/delete-page.php?id=<?php echo escap( $page['id'] ); ?>"> cancella </a> </td>
 					</tr>
 				<?php endforeach ;?>
 			</tbody>
