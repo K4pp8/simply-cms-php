@@ -18,6 +18,4 @@ if ($result_obj = $connection->query( $querySql )) {
 }
 
 
-var_dump($pages);
-
 require_once VIEW_ROOT . '/home.php';

@@ -7,4 +7,4 @@
 </head>
 <body>
 	<div class="wrapper">
-		<h1> My CMs</h1>
+		<h1> My CMS</h1>

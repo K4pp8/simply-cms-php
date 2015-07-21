@@ -1,4 +1,4 @@
-<?php require_once VIEW_ROOT . '/tempates/header.php'; ?> 
+<?php require_once VIEW_ROOT . '/templates/header.php'; ?> 
 
 	<?php if ( empty($pages) ): ?>
 	
@@ -12,4 +12,4 @@
 		</ul>
 	<?php endif; ?>
 
-<?php require_once VIEW_ROOT . '/tempates/footer.php'; ?> 
+<?php require_once VIEW_ROOT . '/templates/footer.php'; ?> 
