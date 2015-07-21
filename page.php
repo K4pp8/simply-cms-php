@@ -21,6 +21,10 @@ if (empty($_GET['page'])){
 	//Mageggio per dare il primo record
 	$page = $pages[0];
 
+	if($page){
+		//inserire controlli per la creazione delle date
+	}
+
 }
 
 require VIEW_ROOT . '/page/show.php';
