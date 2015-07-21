@@ -2,7 +2,7 @@
 	
 	<h2> Aggiungi pagina </h2>
 
-	<form action="<?php echo BASE_URL; ?>admin/add-page.php?asd=culo" method="post">
+	<form action="<?php echo BASE_URL; ?>admin/add-page.php" method="post">
 
 	<fieldset>
 
