@@ -7,4 +7,5 @@ Da fixare:
 
 Da implementare: 
 - login
-- bootstrap
+- config
+- menu
