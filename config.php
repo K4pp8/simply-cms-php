@@ -1,20 +1,12 @@
 <?php
 
-return [
-	'db' 	=>[
-		'host'	=>	'localhost',
-		'name'	=>	'cms',
-		'user'	=>	'cms',
-		'pass'	=>	'cmscms'
-	],
+define('DB_USER','cms');
+define('DB_PASS','cmscms');
+define('DB_NAME','cms');
+define('DB_HOST','localhost');
 
-	'dev' 	=>[
-		'debug'		=>	'FALSE'
-	],
+define('DEBUG',TRUE);
 
-	'fileConf' 	=>[
-		'APP_ROOT'	=>	'da definire',
-		'VIEW_ROOT'	=>	'da definire',
-		'BASE_URL'	=>	'http://localhost:8888/simply-cms-php/'
-	]
-];
+define('APP_ROOT', __DIR__ . '/app');
+define('VIEW_ROOT', APP_ROOT . '/views');
+define('BASE_URL', 'http://localhost:8888/simply-cms-php/');

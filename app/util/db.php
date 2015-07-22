@@ -1,10 +1,11 @@
 <?php
 
 class Database {
-	private static $_mysqlUser = "cms"; 
-	private static $_mysqlPass = "cmscms"; 
-	private static $_mysqlDb = "cms"; 
-	private static $_hostName = "localhost";
+
+	private static $_mysqlUser 	= DB_USER; 
+	private static $_mysqlPass 	= DB_PASS; 
+	private static $_mysqlDb 	= DB_NAME; 
+	private static $_hostName 	= DB_HOST;
 
 	protected static $_connection = NULL;
 
