@@ -3,18 +3,18 @@
 return [
 	'db' 	=>[
 		'host'	=>	'localhost',
-		'name'	=>	'php-user',
-		'user'	=>	'php-user',
-		'pass'	=>	'php-user'
+		'name'	=>	'cms',
+		'user'	=>	'cms',
+		'pass'	=>	'cmscms'
 	],
-	
+
 	'dev' 	=>[
-		'debug'		=>	'FALSE',
-		'aggiornaDb'=>	'FALSE'
+		'debug'		=>	'FALSE'
 	],
 
 	'fileConf' 	=>[
-		'pathArchivio'	=>	'/Volumes/Smart Hd/ARCHIVIO_FOTO_generale/',
-		'csvFile'	=>	'csv/AS15-sap-horeca.csv'
+		'APP_ROOT'	=>	'da definire',
+		'VIEW_ROOT'	=>	'da definire',
+		'BASE_URL'	=>	'http://localhost:8888/simply-cms-php/'
 	]
 ];
