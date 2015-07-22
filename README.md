@@ -7,5 +7,5 @@ Da fixare:
 
 Da implementare: 
 - login
-- config
 - menu
+- hone più accativante
